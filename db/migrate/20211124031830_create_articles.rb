@@ -11,8 +11,6 @@ class CreateArticles < ActiveRecord::Migration[6.0]
       t.string :updatedAt
       t.string :featured
 
-
-
       t.timestamps
     end
   end

@@ -43,7 +43,7 @@ class ArticlesController < ApplicationController
                                    include: {
                                    launch: { only: [:id, :provider]},
                                    event: { only: [:id, :provider]}
-                  }), status: :ok
+                                   }), status: :ok
     else
       render json: { status: 'ERROR', message: 'ID NOT FOUND' }, status: :not_found
     end

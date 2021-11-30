@@ -5,12 +5,10 @@ describe 'RSPEC UNIT TESTS', type: :request do
   it 'returns all articles' do
     get 'https://localhost:3000/articles'
   expect(response).to have_http_status(:success)
-
   end
 end
 
 describe 'POST /articles' do
-
   let(:url){'https://localhost:3000/articles'}
   let(:params){{article: {article_id: '123', title:'teste', url: 'teste', imageUrl:'teste', newsSite:'teste', summary:'teste', publishedAt:'teste', updatedAt:'teste', featured:'teste'}}}
   it 'create status OK' do
@@ -20,7 +18,6 @@ describe 'POST /articles' do
   it 'create a article' do
     expect{post(url,params: params).to change(Article, :count).by(1)}
   end
-
 end
 
 describe 'DELETE /articles/:id' do

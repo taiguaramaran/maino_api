@@ -31,8 +31,6 @@ RSpec.describe "Swagger Documentation", type: :request do
         run_test!
       end
     end
-
-
   end
 
   path '/articles/{id}' do
@@ -48,7 +46,6 @@ RSpec.describe "Swagger Documentation", type: :request do
         let(:article) { { title: 'new article' } }
         run_test!
       end
-
     end
   end
 
@@ -64,7 +61,6 @@ RSpec.describe "Swagger Documentation", type: :request do
         let(:article) { { title: 'new article' } }
         run_test!
       end
-
     end
   end
 
@@ -84,7 +80,6 @@ RSpec.describe "Swagger Documentation", type: :request do
         let(:id) { 'invalid' }
         run_test!
       end
-
     end
   end
 end

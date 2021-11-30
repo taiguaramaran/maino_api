@@ -7,9 +7,9 @@ namespace :batch do
     api_data = RestClient.get(url, { :content_type => :json})
     api_parse = JSON.parse(api_data)
     api_parse.each do |row|
-      api_data = {:id => row['article_id'], :title => row['title'], :url => row['url'], :imageUrl => row[':imageUrl'], :newsSite => row['newsSite'],
+      api_registers = {:id => row['article_id'], :title => row['title'], :url => row['url'], :imageUrl => row[':imageUrl'], :newsSite => row['newsSite'],
            :summary => row['summary'], :publishedAt => row['publishedAt'], :updatedAt => row['updatedAt'], :featured => row['featured']}
-      article_save = Article.where(article_id: row['id']).first_or_create(api_data)
+      article_save = Article.where(article_id: row['id']).first_or_create(api_registers)
 
       row['launches'].each do |launch|
         api_launches = {:id => launch['idLaunch'], :provider => launch['provider'], :article_id => article_save.id}
