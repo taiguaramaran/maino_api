@@ -1,0 +1,103 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/articles":
+    get:
+      summary: Retrieves all articles
+      responses:
+        '200':
+          description: Articles Found
+    post:
+      summary: Creates an Article
+      parameters: []
+      responses:
+        '200':
+          description: article created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+              required:
+              - title
+          application/xml:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+              required:
+              - title
+  "/":
+    get:
+      summary: Show the Challenge
+      responses:
+        '200':
+          description: "Welcome to Back-end Challenge 2021 \U0001F3C5 - Space Flight
+            News"
+  "/articles/{id}":
+    get:
+      summary: Retrieves an Article
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Article Found
+        '404':
+          description: Article not found
+    put:
+      summary: Update an Article
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Article Found
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+              required: true
+          application/xml:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+              required: true
+    delete:
+      summary: Deletes an Article
+      description: Deletes specific article
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: article deleted
+        '404':
+          description: article not found
+servers:
+- url: http://localhost:3000
+  variables:
+    defaultHost:
+      default: http://localhost:3000

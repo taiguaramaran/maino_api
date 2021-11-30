@@ -10,8 +10,8 @@ class CreateArticles < ActiveRecord::Migration[6.0]
       t.string :publishedAt
       t.string :updatedAt
       t.string :featured
-      t.string :launches
-      t.string :events
+
+
 
       t.timestamps
     end
