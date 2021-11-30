@@ -1,24 +1,70 @@
-# README
+## Project Name
+ 
+Back-end Challenge 🏅 2021 - Space Flight News.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Description
 
-Things you may want to cover:
+REST API that uses data from the Space Flight News project.
 
-* Ruby version
 
-* System dependencies
+ 
+ 
+## Technology 
+ 
+Here are the technologies used in this project.
+ 
+* Ruby version  2.7.4
+* Rails version 6.0.4
+ 
+ 
+## Services Used
+ 
+* Github
+* Heroku
+ 
+ 
+## Ruby Gems
 
-* Configuration
+* gem 'pg', '0.18.1
+* gem 'rswag'
+* gem 'rswag-api'
+* gem 'rswag-ui'
+* gem 'rspec-rails', '~> 5.0.0'
+* gem 'rest-client'
+* gem 'uri'
+* gem 'whenever'
+ 
+## Getting started
+ 
+* To install gems:
+>    $ bundle install
+* To create the bank and do as migrations:
+>    $ rake db:create db:migrate db:seed
+* To run the project:
+>    $ rails s
+ 
+## How to use
+ 
+https://maino-api-teste.herokuapp.com/api-docs/index.html
+ 
+ 
+## Links
+ 
+  - Link of deployed application: https://maino-api-teste.herokuapp.com/
+  - Repository: https://github.com/taiguaramaran/maino_api
+  - Loom presentation: https://www.loom.com/share/7d2711ffa65f47c78c54087e416ffd61
 
-* Database creation
+ 
+## Versioning
+ 
+1.0.0.0
+ 
+ 
+## Authors
+ 
+* Taiguara Maran: @taiguaramaran (https://github.com/taiguaramaran)
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a challenge by [Coodesh](https://coodesh.com/)
+ 
