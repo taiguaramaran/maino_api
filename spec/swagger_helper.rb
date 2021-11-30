@@ -24,10 +24,10 @@ RSpec.configure do |config|
       paths: {},
       servers: [
         {
-          url: 'http://localhost:3000',
+          url: 'https://maino-api-teste.herokuapp.com',
           variables: {
             defaultHost: {
-              default: 'http://localhost:3000'
+              default: 'https://maino-api-teste.herokuapp.com'
             }
           }
         }
