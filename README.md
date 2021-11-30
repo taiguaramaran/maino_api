@@ -52,6 +52,7 @@ https://maino-api-teste.herokuapp.com/api-docs/index.html
  
   - Link of deployed application: https://maino-api-teste.herokuapp.com/
   - Repository: https://github.com/taiguaramaran/maino_api
+  - Loom presentation: https://www.loom.com/share/7d2711ffa65f47c78c54087e416ffd61
 
  
 ## Versioning
