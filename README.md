@@ -25,6 +25,7 @@ Here are the technologies used in this project.
  
 ## Ruby Gems
 
+* gem 'pg', '0.18.1
 * gem 'rswag'
 * gem 'rswag-api'
 * gem 'rswag-ui'
